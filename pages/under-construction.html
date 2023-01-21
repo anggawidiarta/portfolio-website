@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/under-construction.css" />
+    <link rel="shortcut icon" href="./images/logo-angga.png" type="image/x-icon">
+    <title>Under Construction</title>
+  </head>
+  <body>
+    <p>HTTP: <span>404</span></p>
+    <code><span>this_page</span>.<em>not_found</em> = true;</code>
+    <code
+      ><span>if</span> (<b>you_spelt_it_wrong</b>)
+      {<span>try_again()</span>;}</code
+    >
+    <code
+      ><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i style="text-transform: capitalize;"
+        >"this page is under construction"</i
+      >); <span>window</span>.<em>location</em> = home;}</code
+    >
+    <center><a href="index.html">HOME</a></center>
+    <script>
+      function type(n, t) {
+        var str = document.getElementsByTagName("code")[n].innerHTML.toString();
+        var i = 0;
+        document.getElementsByTagName("code")[n].innerHTML = "";
+
+        setTimeout(function () {
+          var se = setInterval(function () {
+            i++;
+            document.getElementsByTagName("code")[n].innerHTML =
+              str.slice(0, i) + "|";
+            if (i == str.length) {
+              clearInterval(se);
+              document.getElementsByTagName("code")[n].innerHTML = str;
+            }
+          }, 10);
+        }, t);
+      }
+
+      type(0, 0);
+      type(1, 600);
+      type(2, 1300);
+    </script>
+  </body>
+</html>
