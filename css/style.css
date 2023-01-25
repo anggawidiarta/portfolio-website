@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 
 body {
   font-family: "Raleway", sans-serif;
@@ -34,6 +35,10 @@ body.offcanvas:before {
   opacity: 1;
 }
 
+.unslate_co--site-wrap{
+  width: 100%;
+}
+
 body,
 .unslate_co--site-inner {
   background: #000;
@@ -67,7 +72,7 @@ a:hover {
   z-index: 1;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .unslate_co--site-inner {
     margin-bottom: auto !important;
   }
@@ -85,7 +90,7 @@ a:hover {
   height: 400px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .unslate_co--footer {
     height: auto !important;
     position: relative !important;
@@ -186,6 +191,8 @@ a:hover {
   z-index: 1;
   position: relative;
 }
+
+
 
 .unslate_co--site-nav .unslate_co--site-logo {
   font-size: 1.5rem;
@@ -2193,9 +2200,10 @@ figure.dotted-bg:before {
 }
 
 .unslate_co--footer .footer-site-logo a {
+  letter-spacing: 5px;
   font-size: 30px;
   font-weight: 900;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -2554,13 +2562,12 @@ span.error {
   overflow: hidden;
 }
 
-
 /* gambetta-font-effect(On SubmittedForm Status) */
-.gambetta-font{
+.gambetta-font {
   font-size: 18px;
   font-style: italic;
   text-transform: capitalize;
-  font-family: 'Gambetta', serif;
+  font-family: "Gambetta", serif;
   letter-spacing: -1px;
   transition: 700ms ease;
   font-variation-settings: "wght" 311;
@@ -2571,7 +2578,7 @@ span.error {
 }
 
 .gambetta-font:hover {
-  font-variation-settings: "wght" 582; 
+  font-variation-settings: "wght" 582;
   letter-spacing: 2px;
 }
 
@@ -2660,4 +2667,3 @@ span.error {
     display: none;
   }
 }
-
