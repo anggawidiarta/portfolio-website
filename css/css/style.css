@@ -640,8 +640,7 @@ a, a:hover {
   margin-left: -12px;
   border-radius: 15px;
   border: 2px solid #fff;
-  -webkit-animation: intro 2s;
-          animation: intro 2s;
+  animation: intro 2s;
 }
 .mouse-wrap .mouse .scroll {
   display: block;
@@ -650,18 +649,7 @@ a, a:hover {
   margin: 6px auto;
   border-radius: 4px;
   background: #fff;
-  -webkit-animation: finger 2s infinite;
-          animation: finger 2s infinite;
-}
-@-webkit-keyframes intro {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: finger 2s infinite;
 }
 @keyframes intro {
   0% {
@@ -671,15 +659,6 @@ a, a:hover {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes finger {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(20px);
   }
 }
 @keyframes finger {
@@ -938,7 +917,7 @@ figure.dotted-bg:before {
 }
 @media (max-width: 991.98px) {
   .gutter-v1 > .col,
-.gutter-v1 > [class*=col-] {
+  .gutter-v1 > [class*=col-] {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
@@ -962,7 +941,7 @@ figure.dotted-bg:before {
 }
 @media (max-width: 991.98px) {
   .gutter-v2 > .col,
-.gutter-v2 > [class*=col-] {
+  .gutter-v2 > [class*=col-] {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
@@ -985,7 +964,7 @@ figure.dotted-bg:before {
 }
 @media (max-width: 991.98px) {
   .gutter-v3 > .col,
-.gutter-v3 > [class*=col-] {
+  .gutter-v3 > [class*=col-] {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
@@ -1019,7 +998,7 @@ figure.dotted-bg:before {
 }
 @media (max-width: 991.98px) {
   .gutter-isotope-item > .col,
-.gutter-isotope-item > [class*=col-] {
+  .gutter-isotope-item > [class*=col-] {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
@@ -1450,18 +1429,11 @@ figure.dotted-bg:before {
   border-radius: 50%;
   border: 0.3rem solid rgba(255, 255, 255, 0.3);
   border-top-color: #fff;
-  -webkit-animation: 1.5s spin infinite linear;
-          animation: 1.5s spin infinite linear;
+  animation: 1.5s spin infinite linear;
 }
 .loader-portfolio.dark, .site-loader.dark {
   border: 0.3rem solid rgba(0, 0, 0, 0.3);
   border-top-color: #000;
-}
-
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spin {
@@ -1521,7 +1493,6 @@ span.error {
 }
 
 .unslate_co--sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 80px;
 }
