@@ -57,12 +57,4 @@ Big thanks to the coding community for all the tutorials, articles, and resource
 
 ---
 
-## 🌍 Connect with Me
-
-- LinkedIn: [Your LinkedIn](#)
-- GitHub: [Your GitHub](#)
-- Twitter: [Your Twitter](#)
-
----
-
 Thanks for stopping by! I hope this portfolio inspires you, just as building it inspired me. Let's continue to grow together as developers. 💻✨
